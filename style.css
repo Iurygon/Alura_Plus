@@ -39,9 +39,17 @@ body{
     height: 100vh;
 }
 
+.container__caixa{
+    margin: 0 6em;
+}
+
 .container__titulo{
     font-size: 28px;
     font-weight: 700;
+}
+
+.container__imagem{
+    margin: 1em 0 2em 0;
 }
 
 .container__botao{
@@ -49,17 +57,14 @@ body{
     display: block;
     border-radius: 5px;
     padding: 1em;
+    margin-bottom: 1em;
     color: var(--branco_principal);
     text-decoration: none;
 }
 
 .botao__secundario{
     background: transparent;
-    display: block;
     border: 2px solid var(--branco_principal);
-    border-radius: 5px;
-    padding: 1em;
-    color: var(--branco_principal);
     text-decoration: none;
 }
 

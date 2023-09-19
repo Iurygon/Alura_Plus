@@ -16,9 +16,12 @@
     --fonte_principal: "Inter";
 }
 
+
 /*CÓDIGO*/
 
+
 /*PRINCIPAL*/
+
 
 body{
     background-color: var(--background);
@@ -75,7 +78,9 @@ body{
     color: var(--cinza_secundário);
 }
 
+
 /*APARELHOS*/
+
 
 .secundario__imagem{
     width: 70%;
@@ -100,9 +105,38 @@ body{
     color: var(--cinza_secundário);
 }
 
+
 /*TELAS*/
+
 
 .secundario__botao{
     display: inline-block;
     margin-top: 1em;
+}
+
+
+/* DISPOSITIVOS*/
+
+
+.dispositivos{
+    text-align: center;
+}
+
+.dispositivos__titulo{
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--branco_principal);
+}
+
+.dispositivos__lista{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin: 5em 0;
+}
+
+.lista__item{
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--branco_principal);
 }

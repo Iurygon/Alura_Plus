@@ -1,179 +1,26 @@
-/*RESET CSS*/
+/*IMPORTS*/
 
-*{
-    margin: 0;
-    padding: 0;
-    border: 0;
-}
+
+@import url(style/header.css);
+@import url(style/banner.css);
+
 
 /*VARIÁVEIS*/
 
+
 :root{
-    --branco_principal: #FFFFFF;
-    --cinza_secundário: #C0C0C0;
-    --botao_azul: #167BF7;
-    --botao_azul_hover: #4197ff;
-    --background: #00030C;
-    --fonte_principal: "Inter";
+    --cor_de_fundo: #EBECEE;
+    --branco: #FFFFFF;
+    --laranja: #EB9B00;
+    --azul_degrade: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
+    --fonte_principal: "Poppins";
+
 }
 
-
-/*CÓDIGO*/
-
-
-/*PRINCIPAL*/
-
-
 body{
-    background-color: var(--background);
+    background-color: var(--cor_de_fundo);
     font-family: var(--fonte_principal);
     font-size: 16px;
     font-weight: 400;
-    color: var(--branco_principal);
 }
 
-.principal{
-    background: url("img/Background.png") no-repeat;
-    background-size: contain;
-    align-items: center;
-    text-align: center;
-}
-
-.container{
-    height: 100vh;
-    display: grid;
-    grid-template-columns: 50% 50%;
-}
-
-.container__caixa{
-    margin: 0 6em;
-}
-
-.container__titulo{
-    font-size: 28px;
-    font-weight: 700;
-}
-
-.container__imagem{
-    margin: 1em 0 2em 0;
-}
-
-.container__botao{
-    background: var(--botao_azul);
-    display: block;
-    border-radius: 5px;
-    padding: 1em;
-    margin-bottom: 1em;
-    color: var(--branco_principal);
-    text-decoration: none;
-}
-
-.container__botao:hover{
-    background: var(--botao_azul_hover)
-}
-
-.botao__secundario{
-    background: transparent;
-    border: 2px solid var(--branco_principal);
-    text-decoration: none;
-}
-
-.container__aviso{
-    font-size: 12px;
-    color: var(--cinza_secundário);
-}
-
-
-/*APARELHOS*/
-
-
-.secundario__imagem{
-    width: 70%;
-}
-
-.secundario{
-    align-items: center;
-    margin: 0 10em;
-}
-
-.container__descricao{
-    padding: 2em;
-}
-
-.descricao__titulo{
-    font-weight: 700;
-    font-size: 48px;
-    margin-bottom: 0.1em;
-}
-
-.descricao__texto{
-    color: var(--cinza_secundário);
-}
-
-
-/*TELAS*/
-
-
-.secundario__botao{
-    display: inline-block;
-    margin-top: 1em;
-}
-
-
-/* DISPOSITIVOS*/
-
-
-.dispositivos{
-    text-align: center;
-}
-
-.dispositivos__titulo{
-    font-size: 48px;
-    font-weight: 700;
-    color: var(--branco_principal);
-}
-
-.dispositivos__lista{
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
-    margin: 5em 0;
-}
-
-.lista__item{
-    font-size: 32px;
-    font-weight: 700;
-    color: var(--branco_principal);
-}
-
-
-/*RODAPÉ*/
-
-.rodape{
-    text-align: center;
-    margin: 5em 3em;
-}
-
-.rodape__lista{
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
-    margin-top: 1em;
-}
-
-.lista__link a{
-    text-decoration: none;
-    font-size: 16px;
-    color: var(--branco_principal);
-    margin-left: 1em;
-}
-
-.lista__link a:hover{
-    color: var(--botao_azul);
-}
-
-.rodape__texto{
-    font-size: 14px;
-    color: var(--cinza_secundário);
-    margin: 1em 0;
-}

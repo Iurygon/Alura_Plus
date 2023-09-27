@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alura Books</title>
     <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -66,6 +67,46 @@
         <input type="search" id="banner__pesquisa" class="banner__pesquisa" placeholder="Qual será sua próxima leitura?">
 
     </section>
+
+    <section class="carrossel">
+
+        <h2 class="carrossel__titulo">Novos lançamentos</h2>
+    <div class="swiper">
+
+        <div class="swiper-pagination"></div>
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide"><img src="img/ApacheKafka.svg" alt="Apache Kafka e Sprin Boot por Alura Books"></div>
+            <div class="swiper-slide"><img src="img/Guia Front-end.svg" alt="Guia Front-End por Alura Books"></div>
+            <div class="swiper-slide"><img src="img/Javascript.svg" alt="Javascript assertivo por Alura Books"></div>
+            <div class="swiper-slide"><img src="img/Liderança.svg" alt="Liderança em Design por Alura Books"></div>
+            <div class="swiper-slide"><img src="img/Portugol.svg" alt="Lógica de programação com Portugol"></div>
+            
+        </div>
+    
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+    </div>
+
+    </section>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+
+    const swiper = new Swiper('.swiper', {
+        spaceBetween: 10,
+        slidesPerView: 3,
+        pagination: {
+            el: '.swiper-pagination',
+            type: 'bullets',
+        },
+    });
+
+    </script>    
 
 </body>
 
